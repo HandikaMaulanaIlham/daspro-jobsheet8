@@ -7,15 +7,18 @@ public class Tugas115 {
 
         System.out.print("Masukkan Nilai n = ");
         int n = sc.nextInt();
-
-        for(int i = 1 ; i <= n ; i++){
+        if (n <= 0){
+            System.out.println("Nilai n harus > 0");
+        } else {
+            for(int i = 1 ; i <= n ; i++){
             for(int j = 1 ; j <= i ; j++){
                 System.out.print(j + " ");
                 total++;
             }
             System.out.println();
+            System.out.println("Total angka yang tercetak = " + total);
         }
-        System.out.println("Total angka yang tercetak = " + total);
+        }
         sc.close();
     }
 }
